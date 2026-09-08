@@ -1,3 +1,9 @@
+## 2.1.2
+
+- Rows area now shows a loading indicator while the first page is fetched, the localized "No items found" text for an empty result, and the error plus a Refresh button when the fetcher throws. Before this the table was a blank surface in all three states.
+- `PagedDataTableConfiguration` gains `loadingBuilder`, `emptyBuilder` and `errorBuilder` to replace those defaults.
+- `PagedDataTableController.currentError` exposes the last fetch error.
+
 ## 2.1.1
 
 - Fix Date- filters not showing `name` attribute as label in the text field.

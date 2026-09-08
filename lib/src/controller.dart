@@ -50,6 +50,9 @@ final class PagedDataTableController<K extends Comparable<K>, T>
   /// The current amount of items that are being displayed on the current page
   int get totalItems => _totalItems;
 
+  /// The error the last fetch threw, or null when the last fetch succeeded.
+  Object? get currentError => _currentError;
+
   /// The current page size
   int get pageSize => _currentPageSize;
 
